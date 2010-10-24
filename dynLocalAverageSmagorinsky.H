@@ -43,11 +43,11 @@ Description
     In the dynamic version of the choric  Smagorinsky model
     the coefficients cI and cD are calculated during the simulation,
 
-        cI=<K*m>_cell/<m*m>_cell
+        cI=<K*m>_face/<m*m>_face
 
     and
 
-        cD=<L.M>_cell/<M.M>_cell,
+        cD=<L.M>_face/<M.M>_face,
 
     where
 
@@ -55,7 +55,7 @@ Description
         m = delta^2*(4*||F(D)||^2 - F(||D||^2))
         L = dev(F(U*U) - F(U)*F(U))
         M = delta^2*(F(||D||*dev(D)) - 4*||F(D)||*F(dev(D)))
-        <...>_cell = volume average on the cell and its neighbours
+        <...>_face = face average
     @endverbatim
 
 SourceFiles
