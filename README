@@ -1,0 +1,8 @@
+Implementation of the dynamic Smagorinsky model with coefficients cD and
+cI computed as local average of their face values to avoid numerical 
+instabilities. 
+    
+Negative values of the effective viscosity are removed by clipping it to
+zero (nuSgs is clipped to -nu)
+
+The code is known to work with OpenFOAM 1.7.x

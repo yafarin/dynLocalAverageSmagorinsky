@@ -1,0 +1,3 @@
+dynLocalAverageSmagorinsky.C
+
+LIB = $(FOAM_LIBBIN)/libdynLocalAverageSmagorinskyModel
