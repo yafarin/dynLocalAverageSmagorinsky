@@ -153,25 +153,6 @@ public:
             return k_;
         }
 
-// 	//- Returns the effective viscosity
-// 	tmp<volScalarField> nuEff() const
-// 	{
-// 	    volScalarField nuEffUnbounded = nuSgs() + nu();
-// 	    
-// 	    // Binding the effective viscosity to zero
-// 	    bound
-// 	    (
-// 	      nuEffUnbounded, 
-// 	      dimensionedScalar("zeroNuEff", dimensionSet(0, 2, -1, 0, 0, 0, 0), 0.0)
-// 	    );
-// 
-// 	    return tmp<volScalarField>
-// 	    (
-// 		new volScalarField("nuEff", nuEffUnbounded)
-// 	    );
-// 	}
-	
-	
         //- Correct Eddy-Viscosity and related properties
         virtual void correct(const tmp<volTensorField>& gradU);
 
