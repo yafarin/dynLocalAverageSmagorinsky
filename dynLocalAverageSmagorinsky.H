@@ -1,31 +1,30 @@
 /*---------------------------------------------------------------------------*\
-  =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 1991-2009 OpenCFD Ltd.
-     \\/     M anipulation  | Copyright (C) 2010 Alberto Passalacqua 
--------------------------------------------------------------------------------
-License
-    This file is part of OpenFOAM.
+dynLocalAverageSmagorinsky - Implementation of the dynamic Smagorinsky
+			     SGS model.
+				 
+Copyright Information
+    Copyright (C) 1991-2009 OpenCFD Ltd.
+    Copyright (C) 2010 Alberto Passalacqua 
 
-    OpenFOAM is free software: you can redistribute it and/or modify it
-    under the terms of the GNU General Public License as published by
+License
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
-    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
-    for more details.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Class
     Foam::incompressible::LESModels::dynLocalAverageSmagorinsky
 
 Description
-    The Isochoric dynamic Smagorinsky Model for incompressible flows.
+    The isochoric dynamic Smagorinsky model for incompressible flows.
 
     Algebraic eddy viscosity SGS model founded on the assumption that
     local equilibrium prevails.
@@ -73,9 +72,6 @@ Notes
     zero (nuSgs is clipped to -nu)
 
     The code is known to work with OpenFOAM 1.7.x
-
-References
-    
 
 \*---------------------------------------------------------------------------*/
 
